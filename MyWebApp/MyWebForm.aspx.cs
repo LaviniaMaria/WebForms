@@ -49,7 +49,7 @@ namespace MyWebApp
         protected void Page_PreInit(object sender, EventArgs e)
         {
 
-            label2.Text += " Page_PreInit/ ";
+            label2.Text += " Page_PreInit1/ ";
 
         }
 
