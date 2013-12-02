@@ -19,12 +19,12 @@ namespace MyWebApp
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            label2.Text += "Page_Load/ ";
+            label2.Text += "Page_Load<br/>";
             Button b = new Button();
             b.Text = "DinamicButton";
             b.ID = "dinamicButton";
             b.Click += setLabelText;
-            myPanel.Controls.Add(b);
+            addRemovePanel.Controls.Add(b);
 
         }
 
@@ -35,28 +35,28 @@ namespace MyWebApp
                 pageTitle.Text = Title;
             }
 
-            label2.Text += "  Page_Prerender/ ";
+            label2.Text += "  Page_Prerender<br/>";
 
         }
 
         protected void Page_Init(object sender, EventArgs e)
         {
 
-            label2.Text += " Page_Init/ ";
+            label2.Text += " Page_Init<br/> ";
 
         }
 
         protected void Page_PreInit(object sender, EventArgs e)
         {
 
-            label2.Text += " Page_PreInit123/ ";
+            label2.Text += " Page_PreInit123<br/>";
 
         }
 
         protected void Page_Unload(object sender, EventArgs e)
         {
 
-            label2.Text += " Page_Unload/ ";
+            label2.Text += " Page_Unload<br/> ";
 
         }
 
@@ -71,6 +71,11 @@ namespace MyWebApp
             string text = Request.Form["field"];
             field.Text = "";
             label.Text = text;
+        }
+
+        public void concatText(object sender, EventArgs e)
+        {
+            label2.Text += "Am dat click pe buton<br/>";
         }
 
         public void changeTitle(object sender, EventArgs e)
@@ -94,5 +99,12 @@ namespace MyWebApp
         {
             label.Text = list.SelectedValue;
         }
+
+        public void openNewPage(object sender, EventArgs e)
+        {
+            Response.Redirect("About.aspx");
+        }
+
     }
+
 }

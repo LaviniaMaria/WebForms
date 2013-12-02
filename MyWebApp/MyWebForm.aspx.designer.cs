@@ -31,6 +31,15 @@ namespace MyWebApp {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
+        /// link1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink link1;
+        
+        /// <summary>
         /// myPanel control.
         /// </summary>
         /// <remarks>
@@ -56,6 +65,15 @@ namespace MyWebApp {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox field;
+        
+        /// <summary>
+        /// addRemovePanel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel addRemovePanel;
         
         /// <summary>
         /// list control.
